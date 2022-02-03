@@ -1,0 +1,24 @@
+{
+    "name": "GAS",
+    "description": "it's so gas...",
+    "version": "69",
+    "manifest_version": 3,
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["https://accounts.google.com/AccountChooser/*"],
+        "js": ["getAccounts.js"]
+    },
+    {
+        "matches": ["*://*.google.com/*"],
+        "js": ["switchAccount.js"]
+    }
+    ],
+    "icons": {
+        "128": "gas.png"
+    }
+}
