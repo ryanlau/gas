@@ -1,25 +1,24 @@
 {
-    "name": "GAS",
-    "description": "it's so gas...",
-    "version": "69.0000001",
-    "manifest_version": 3,
-    "permissions": [
-        "storage"
-    ],
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [{
-        "matches": ["https://accounts.google.com/AccountChooser/*"],
-        "js": ["getAccounts.js"]
+  "name": "GAS",
+  "description": "it's so gas...",
+  "version": "69.0000001",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://accounts.google.com/AccountChooser/*"],
+      "js": ["getAccounts.js"]
     },
     {
-        "matches": ["*://*.google.com/*"],
-        "js": ["switchAccount.js"]
+      "matches": ["*://*.google.com/*"],
+      "js": ["switchAccount.js"]
     }
-    ],
-    "icons": {
-        "128": "gas.png"
-    },
-    "options_page": "options.html"
+  ],
+  "icons": {
+    "128": "gas.png"
+  },
+  "options_page": "options.html"
 }

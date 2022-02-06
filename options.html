@@ -1,27 +1,33 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/styles.css" rel="stylesheet">
-</head>
-
-<body class="bg-black rounded-full text-white p-8 w-96">
-    <p class="text-lg font-bold">enabled sites</p>
+  <body class="bg-black rounded-full text-white p-8 w-96">
+    <p class="text-lg font-bold">settings</p>
 
     <div class="py-2 flex items-center">
-        <input class="grow-0 rounded-md" type="checkbox" id="mail">
-        <label class="text-lg pl-2" for="mail">mail</label>
+      <input class="grow-0 rounded-md" type="checkbox" id="auto-reload" />
+      <label class="text-lg pl-2" for="auto-reload">auto reload</label>
+    </div>
+
+    <p class="text-lg font-bold mt-4">enabled sites</p>
+
+    <div class="py-2 flex items-center">
+      <input class="grow-0 rounded-md" type="checkbox" id="mail" />
+      <label class="text-lg pl-2" for="mail">mail</label>
     </div>
 
     <div class="py-2 flex items-center">
-        <input class="grow-0 rounded-md" type="checkbox" id="drive">
-        <label class="text-lg pl-2" for="drive">drive</label>
+      <input class="grow-0 rounded-md" type="checkbox" id="drive" />
+      <label class="text-lg pl-2" for="drive">drive</label>
     </div>
 
     <div class="py-2 flex items-center">
-        <input class="grow-0 rounded-md" type="checkbox" id="docs">
-        <label class="text-lg pl-2" for="docs">docs/sheets/slides</label>
+      <input class="grow-0 rounded-md" type="checkbox" id="docs" />
+      <label class="text-lg pl-2" for="docs">docs/sheets/slides</label>
     </div>
 
     <!-- <div class="py-2 flex items-center">
@@ -35,16 +41,15 @@
     </div> -->
 
     <div class="py-2 flex items-center">
-        <input class="grow-0 rounded-md" type="checkbox" id="classroom">
-        <label class="text-lg pl-2" for="classroom">classroom</label>
+      <input class="grow-0 rounded-md" type="checkbox" id="classroom" />
+      <label class="text-lg pl-2" for="classroom">classroom</label>
     </div>
 
     <div class="py-2 flex items-center">
-        <input class="grow-0 rounded-md" type="checkbox" id="remotedesktop">
-        <label class="text-lg pl-2" for="remotedesktop">remote desktop</label>
+      <input class="grow-0 rounded-md" type="checkbox" id="remotedesktop" />
+      <label class="text-lg pl-2" for="remotedesktop">remote desktop</label>
     </div>
 
     <script src="options.js"></script>
-</body>
-
+  </body>
 </html>
