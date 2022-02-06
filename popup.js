@@ -22,3 +22,7 @@ selectMenu.addEventListener("change", () => {
         console.log("saved")
     })
 })
+
+document.querySelector("#options-button").addEventListener("click", () => {
+    chrome.runtime.openOptionsPage();
+})

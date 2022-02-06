@@ -1,7 +1,7 @@
 {
     "name": "GAS",
     "description": "it's so gas...",
-    "version": "69",
+    "version": "69.0000001",
     "manifest_version": 3,
     "permissions": [
         "storage"
@@ -20,5 +20,6 @@
     ],
     "icons": {
         "128": "gas.png"
-    }
+    },
+    "options_page": "options.html"
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["popup.html"],
+  content: ["popup.html", "options.html"],
   theme: {
     extend: {},
   },
